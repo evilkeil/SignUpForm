@@ -28,10 +28,13 @@ body{
 
 
   .image-container{
+    display: flex;
     width: 40%;
     background-size: cover;
     background-position: center;
     animation: animate 16s ease-in-out infinite;
+    align-items: center;
+    justify-content: center;
     
   }
 
@@ -56,4 +59,16 @@ body{
     75%{
         background-image: url(images/tharoushan-kandarajah-KtDXt7DyfVM-unsplash.jpg);
     }
+  }
+
+  /* title  */
+
+  h1{
+    font: 4rem "aesthetic";
+    color: wheat;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    
   }
