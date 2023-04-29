@@ -4,3 +4,12 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+/* import fonts  */
+@font-face {
+    font-family: "coolvetica";
+    src: url("fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("fonts/coolvetica_rg-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
