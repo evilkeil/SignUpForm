@@ -1,111 +1,167 @@
 /* initial styles */
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: whitesmoke;
+  
 }
 
 /* import fonts  */
 @font-face {
-    font-family: "coolvetica";
-    src: url("fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("fonts/coolvetica_rg-webfont.woff")
-        format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "coolvetica";
+  src: url("fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("fonts/coolvetica_rg-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "aesthetic";
-    src: url("fonts/Aesthetic-Regular.woff2") format("woff2"), url("fonts/Aesthetic-Regular.woff")
-        format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-  .image-container{
-    display: flex;
-    width: 40%;
-    background-size: cover;
-    background-position: center;
-    animation: animate 20s ease-in-out infinite;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
-  }
-
-  form{
-    float: right;
-    width: 60%;
-  }
+@font-face {
+  font-family: "aesthetic";
+  src: url("fonts/Aesthetic-Regular.woff2") format("woff2"), url("fonts/Aesthetic-Regular.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 
-  /* animation */
-
-  @keyframes animate{
-    0%,100%{
-        background-image: url(images/leo-maverick-Vb5xjkLaFXQ-unsplash.jpg);
-
-    }
-    25%{
-        background-image: url(images/marek-piwnicki-9celAnrs-BU-unsplash.jpg);
-    }
-    50%{
-        background-image: url(images/sahil-moosa-q5O9V6yZFuk-unsplash.jpg);
-    }
-    75%{
-        background-image: url(images/tharoushan-kandarajah-KtDXt7DyfVM-unsplash.jpg);
-    }
-  }
-
-  /* title  */
-
-  h1{
-    font: 4rem "aesthetic";
-    color: wheat;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    text-align: center;
-    
-  }
-
-  /* style credits */
+.image-container{
+  display: flex;
+  width: 40vw;
+  background-size: cover;
+  background-position: center;
+  animation: animate 20s ease-in-out infinite;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   
-  .credit a{
-    text-decoration: none;
-    color:white;
-  }
+}
 
-  .credit {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    color: white; /* Add this to make sure the credit text is visible */
-    font-size: 0.8rem;
-    transition: opacity 1s ease-in-out;
-  }
- 
+#form-container{
+  float: right;
+  width: 60vw;
+  background-color: whitesmoke;
+  margin-left:6rem;
+}
 
-  /*form styles */
 
-  h2{
-    font: 1.5rem "aesthetic" ;
-    text-align: center;
-  }
+/* animation */
 
-  ul{
-    list-style: none;
+@keyframes animate{
+  0%,100%{
+      background-image: url(images/leo-maverick-Vb5xjkLaFXQ-unsplash.jpg);
+
   }
-  form{
-    background-color: #a44404;
+  25%{
+      background-image: url(images/marek-piwnicki-9celAnrs-BU-unsplash.jpg);
   }
+  50%{
+      background-image: url(images/sahil-moosa-q5O9V6yZFuk-unsplash.jpg);
+  }
+  75%{
+      background-image: url(images/tharoushan-kandarajah-KtDXt7DyfVM-unsplash.jpg);
+  }
+}
+
+/* title  */
+
+h1{
+  font: 4rem "aesthetic";
+  color: wheat;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  
+}
+
+/* style credits */
+
+.credit a{
+  text-decoration: none;
+  color:white;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white; /* Add this to make sure the credit text is visible */
+  font-size: 0.8rem;
+  transition: opacity 1s ease-in-out;
+}
+
+
+/*form styles */
+
+h2{
+  font: 1.5rem "coolvetica" ;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+  
+  "header header"
+  "header header "
+  "name name "
+  "contact contact "
+  "password password"
+
+
+  
+}
+
+form ul{
+  display: flex;
+  gap: 20px;
+}
+
+/* grid  */
+
+h2{
+  grid-area: header;
+}
+
+.name{
+  grid-area: name;
+}
+
+.contact{
+  grid-area: contact;
+}
+
+.password{
+  grid-area: password;
+}
+
+button{
+  grid-area: btn;
+}
+
+p.account{
+  grid-area: account;
+}
+
+#form-container {
+  width: 500px;
+  clear: both;
+}
+
+#form-container input {
+  width: 100%;
+  clear: both;
+}
