@@ -13,3 +13,14 @@ body{
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "aesthetic";
+    src: url("fonts/Aesthetic-Regular.woff2") format("woff2"), url("fonts/Aesthetic-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  
