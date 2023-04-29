@@ -49,6 +49,7 @@ body{
   @keyframes animate{
     0%,100%{
         background-image: url(images/leo-maverick-Vb5xjkLaFXQ-unsplash.jpg);
+        
     }
     25%{
         background-image: url(images/marek-piwnicki-9celAnrs-BU-unsplash.jpg);
