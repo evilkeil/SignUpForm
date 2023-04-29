@@ -133,6 +133,7 @@ form ul{
 /* grid  */
 
 h2{
+  margin-top: 6rem;
   grid-area: header;
 }
 
