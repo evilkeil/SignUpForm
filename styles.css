@@ -95,3 +95,17 @@ body{
     transition: opacity 1s ease-in-out;
   }
  
+
+  /*form styles */
+
+  h2{
+    font: 1.5rem "aesthetic" ;
+    text-align: center;
+  }
+
+  ul{
+    list-style: none;
+  }
+  form{
+    background-color: #a44404;
+  }
