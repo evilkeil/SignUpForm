@@ -35,6 +35,7 @@ body{
     animation: animate 16s ease-in-out infinite;
     align-items: center;
     justify-content: center;
+    position: relative;
     
   }
 
@@ -49,7 +50,7 @@ body{
   @keyframes animate{
     0%,100%{
         background-image: url(images/leo-maverick-Vb5xjkLaFXQ-unsplash.jpg);
-        
+
     }
     25%{
         background-image: url(images/marek-piwnicki-9celAnrs-BU-unsplash.jpg);
@@ -72,4 +73,21 @@ body{
     width: 100%;
     text-align: center;
     
+  }
+
+  /* style credits */
+  
+  .credit a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
   }
