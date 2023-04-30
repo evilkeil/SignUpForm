@@ -147,6 +147,31 @@ form .signup .input-box{
   padding-left: 15px;
 }
 
-button.btn{
+.btn button{
+  width: 10rem;
+  height: 2rem;
+  background-color: #e69936;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn button:hover{
+  cursor: pointer;
+  background-color: #efbd7d;
+  color: black;
+}
+
+.btn p{
+  color: #995e13;
+}
+
+.btn p a {
+  text-decoration: none;
+  color:#995e13;
   
+}
+
+p.account a:hover{
+  color: #5e3a0c;
 }
