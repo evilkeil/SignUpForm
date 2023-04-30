@@ -193,3 +193,17 @@ button:hover{
   background-color: #efbd7d;
   color: black;
 }
+
+p.account{
+  color: #995e13;
+}
+
+p.account a {
+  text-decoration: none;
+  color:#995e13;
+  
+}
+
+p.account a:hover{
+  color: #5e3a0c;
+}
