@@ -175,3 +175,16 @@ form .signup .input-box{
 p.account a:hover{
   color: #5e3a0c;
 }
+
+/* style the feilds and validation  */
+
+input {
+  outline: none;
+  border: 2px solid #ba9a6d;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border: 2px solid #573a24;
+}
