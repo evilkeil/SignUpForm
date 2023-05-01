@@ -183,6 +183,8 @@ input {
   border: 2px solid #ba9a6d;
   border-radius: 5px;
   transition: all 0.3s ease;
+  float: left;
+  clear: both;
 }
 
 input:focus {
@@ -204,3 +206,13 @@ input[type="tel"]:valid{
 input[type="password"]:valid{
   border:2px solid green;
 }
+
+/* input:valid +.tick{
+  background: url(images/tick.png) center;
+  background-size: 100%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px;
+} */
