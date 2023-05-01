@@ -207,12 +207,6 @@ input[type="password"]:valid{
   border:2px solid green;
 }
 
-/* input:valid +.tick{
-  background: url(images/tick.png) center;
-  background-size: 100%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  float: left;
-  margin: 10px;
-} */
+.invalid{
+  color:  red;
+}
